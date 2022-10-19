@@ -1,0 +1,16 @@
+.Input{
+    height:40px;
+    width: 97%;
+    border-radius: 6px;
+    border-color: #53E88B;
+    border-width: 1px;
+    background: none;
+    color: aliceblue;
+    font-size: 15px;
+    padding: 1px 10px;
+    font-family: 'Century Gothic';
+}
+
+.Input:focus{
+    outline: none;
+}

@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+}
+
+.App {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.welcomePage_left {
+  width: 100%;
+  height: 100vh;
+  background: #0c121f;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomePage_right {
+  width: 100%;
+  height: 100vh;
+  background: #101828;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mascotPicture{
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  z-index: 2;
+  left: 6%;
+}
+
+.welcomePage_right_info{
+  background: none;
+  position: sticky;
+  display: grid;
+  height: 80%;
+  width: 70%;
+  display: grid; 
+  grid-template-columns: 1fr 1.3fr 0.4fr 1.6fr 0.7fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.8fr 1fr 1fr 0.5fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Welcome Welcome Welcome Welcome Welcome"
+    "CreateAcc CreateAcc . . ."
+    "EmailPlace EmailPlace EmailPlace EmailPlace EmailPlace"
+    "PassPlace PassPlace PassPlace PassPlace PassPlace"
+    "RememberMe RememberMe . ForgotPaswort ForgotPaswort"
+    "Enter Enter Enter Enter Enter"
+    "Demo Demo Demo Demo Demo"
+    "Strip Strip Strip Strip Strip"
+    "GoogleEnter GoogleEnter GoogleEnter GoogleEnter GoogleEnter"
+    "FacebookEnter FacebookEnter . TwitterEnter TwitterEnter"; 
+}
+
+.Welcome {
+  display: flex;
+  grid-area: Welcome;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
+}
+.CreateAcc { 
+  grid-area: CreateAcc;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(217, 220, 226, 0.4);
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.CreateAcc_Link{
+  height: 20px;
+  color: #53E88B;
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.CreateAcc_Link:hover{
+  color: #00ff62;
+}
+
+.EmailPlace { grid-area: EmailPlace; }
+
+.PassPlace { grid-area: PassPlace; }
+
+.RememberMe { 
+  grid-area: RememberMe;
+}
+
+.RememberMe input{
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.RememberMe input+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: 'Century Gothic';
+  color: aliceblue;
+}
+.RememberMe input+label::before {
+  content: '';
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 0px solid #0C121F;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #000000;
+}
+
+.RememberMe input:checked+label::before {
+  background-image:url("D:\Projects\cityfoodpc\src\UI\check.png");
+}
+
+.RememberMe input:disabled+label::before {
+  background-color: #000000;
+}
+
+.ForgotPaswort {
+  grid-area: ForgotPaswort;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Century Gothic";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 30px;
+  color: #53E88B;
+}
+
+.ForgotPaswort:hover{
+  color: #00ff62;
+  cursor:pointer;
+}
+
+.Enter {
+  grid-area: Enter;
+  display: flex;
+  font-family: "Century Gothic";
+  background: #53E88B;
+  height: 64%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.Enter:hover{
+  transition: 0.4s;
+  background: #00ff62;
+  cursor: pointer;
+}
+
+.Demo { 
+  grid-area: Demo;
+  display: flex;
+  font-family: "Century Gothic";
+  background: #000000;
+  height: 64%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #53E88B;
+  transition: 0.4s;
+}
+
+.Demo:hover{
+  transition: 0.4s;
+  background: #111111;
+  cursor: pointer;
+}
+
+.Strip {
+  grid-area: Strip;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+}
+
+.Strip hr{
+  position: absolute;
+  border-color: #53E88B;
+  width: 100%;
+}
+
+.Strip div{
+  background-color: #101828;
+  color: #53E88B;
+  padding: 3px 11px;
+  border-radius: 4px;
+  z-index: 1;
+  font-family: "Century Gothic";
+}
+
+.GoogleEnter { 
+  grid-area: GoogleEnter;
+  display: flex;
+  font-family: "Century Gothic";
+  height: 68%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  background: none;
+  border: 1px solid #D9DCE2;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.GoogleEnter:hover{
+  background-color: #ffffff33;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.GoogleEnter div {
+  height: 57%;
+  width: 7%;
+  background-image: url("D:\Projects\cityfoodpc\src\UI\GOOGLE 1.png");
+  background-repeat: no-repeat;
+}
+
+.FacebookEnter { grid-area: FacebookEnter;
+  display: flex;
+  font-family: "Century Gothic";
+  height: 68%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  background: none;
+  border: 1px solid #D9DCE2;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.FacebookEnter:hover{
+  background-color: #ffffff33;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.FacebookEnter div {
+  height: 60%;
+  width: 18%;
+  background-image: url("D:\Projects\cityfoodpc\src\UI\facebook-logo-for-website-png-7 1.png");
+  background-repeat: no-repeat;
+}
+
+.TwitterEnter { 
+  grid-area: TwitterEnter;
+  display: flex;
+  font-family: "Century Gothic";
+  height: 68%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  background: none;
+  border: 1px solid #D9DCE2;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.TwitterEnter:hover{
+  background-color: #ffffff33;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.TwitterEnter div {
+  height: 80%;
+  width: 18%;
+  background-image: url("D:\Projects\cityfoodpc\src\UI\twitter-logo-2016-png-2 1.png");
+  background-repeat: no-repeat;
+}
