@@ -136,7 +136,7 @@
 }
 
 .RememberMe input:checked+label::before {
-  background-image:url("D:\Projects\cityfoodpc\src\UI\check.png");
+  background-image:url("D:\Projects\cityfoodpc\src\pictures\check.png");
 }
 
 .RememberMe input:disabled+label::before {
@@ -248,7 +248,7 @@
 .GoogleEnter div {
   height: 57%;
   width: 7%;
-  background-image: url("D:\Projects\cityfoodpc\src\UI\GOOGLE 1.png");
+  background-image: url("D:\Projects\cityfoodpc\src\pictures\GOOGLE 1.png");
   background-repeat: no-repeat;
 }
 
@@ -276,7 +276,7 @@
 .FacebookEnter div {
   height: 60%;
   width: 18%;
-  background-image: url("D:\Projects\cityfoodpc\src\UI\facebook-logo-for-website-png-7 1.png");
+  background-image: url("D:\Projects\cityfoodpc\src\pictures\facebook-logo-for-website-png-7 1.png");
   background-repeat: no-repeat;
 }
 
@@ -305,6 +305,6 @@
 .TwitterEnter div {
   height: 80%;
   width: 18%;
-  background-image: url("D:\Projects\cityfoodpc\src\UI\twitter-logo-2016-png-2 1.png");
+  background-image: url("D:\Projects\cityfoodpc\src\pictures\twitter-logo-2016-png-2 1.png");
   background-repeat: no-repeat;
 }

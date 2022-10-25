@@ -1,9 +1,9 @@
 import React from 'react'
 import Input from './components/Input/Input'
-import mascotPicture from './UI/image_2022-10-13_15-34-44.png'
-import './styles/App.css'
+import mascotPicture from './pictures/image_2022-10-13_15-34-44.png'
+import './registration.css'
 
-function App() {
+function registration() {
   return (
     <div className="App">
       <img alt='' src={mascotPicture} className='mascotPicture'/>
@@ -42,4 +42,4 @@ function App() {
   )
 }
 
-export default App
+export default registration
