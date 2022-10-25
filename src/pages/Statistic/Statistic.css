@@ -1,0 +1,180 @@
+.container {  
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 0.5fr 1.5fr 1fr;  
+    grid-template-rows: 0.2fr 1.4fr 1.4fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Menu Header Header"
+      "Menu Grid Grid"
+      "Menu Grid Grid";
+    background: #0C121F;
+}
+  
+.menu {
+    grid-area: Menu;
+    background: #101828;
+}
+  
+.header {
+    grid-area: Header;
+    display: flex;
+    align-items: center;
+    margin: 2% 0 2% 0;
+    justify-content: space-around;
+}
+
+.search{
+    display: flex;
+    width: 82%;
+    height: 55%;
+    background: none;
+    align-items: center;
+}
+
+.searchIcon{
+    background: url("./pictures/image_2022-10-24_11-20-03.png");
+    height: 18.9px;
+    width: 18.9px;
+    margin: 0 0 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.searchField {
+    background: none;
+    border: none;
+    color: #D9DCE2;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.searchField:focus{
+    outline: none;
+}
+
+.help{
+    height: 40px;
+    width: 40px;
+    background: url("./pictures/image_2022-10-24_11-41-48.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.help:hover{
+    transition: 0.2s;
+    background-position-y: -0.7px;
+    background-position-x: 5px;
+}
+
+.group{
+    height: 37px;
+    width: 37px;
+    background: url("./pictures/image_2022-10-24_11-42-06.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.group:hover{
+    transition: 0.2s;
+    background-position-y: -1px;
+    background-position-x: 1.5px;
+}
+
+.notification{
+    height: 37px;
+    width: 37px;
+    background: url("./pictures/image_2022-10-24_11-42-34.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.notification:hover{
+    transition: 0.2s;
+    background-position-y: -3px;
+    background-position-x: 2px;
+}
+
+.settings{
+    height: 37px;
+    width: 37px;
+    background: url("./pictures/image_2022-10-24_11-43-07.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.settings:hover{
+    transition: 0.2s;
+    background-position-y: -3px;
+    background-position-x: 2px;
+}
+
+.logout{
+    height: 37px;
+    width: 37px;
+    background: url("./pictures/image_2022-10-24_11-43-26.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.logout:hover{
+    transition: 0.2s;
+    background-position-y: -3px;
+    background-position-x: 2px;
+}
+
+.grid {
+    grid-area: Grid;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1.3fr 0.7fr 1fr 1.4fr 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Profit Profit Profit Profit Profit Profit Profit Profit Profit Profit Profit Profit Period Period Period Period Period Period Period Period Period Period"
+      "Day-profit Day-profit Client-statistic Client-statistic Day-active Day-active Day-active Day-active Day-active Day-active Day-active Day-active Conversion Conversion Conversion Conversion Conversion Current-statistics Current-statistics Current-statistics Current-statistics Current-statistics"
+      "Day-profit Day-profit Client-statistic Client-statistic Day-active Day-active Day-active Day-active Day-active Day-active Day-active Day-active Conversion Conversion Conversion Conversion Conversion Current-statistics Current-statistics Current-statistics Current-statistics Current-statistics"
+      "Day-profit Day-profit Client-statistic Client-statistic Day-active Day-active Day-active Day-active Day-active Day-active Day-active Day-active Conversion Conversion Conversion Conversion Conversion Current-statistics Current-statistics Current-statistics Current-statistics Current-statistics"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions Day-active Day-active Day-active Day-active Day-active Day-active Day-active Day-active Conversion Conversion Conversion Conversion Conversion Current-statistics Current-statistics Current-statistics Current-statistics Current-statistics"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions Day-active Day-active Day-active Day-active Day-active Day-active Day-active Day-active Conversion Conversion Conversion Conversion Conversion Current-statistics Current-statistics Current-statistics Current-statistics Current-statistics"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions Day-active Day-active Day-active Day-active Day-active Day-active Day-active Day-active Conversion Conversion Conversion Conversion Conversion Current-statistics Current-statistics Current-statistics Current-statistics Current-statistics"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Order-types Order-types Order-types Order-types Order-types Order-types Order-types Order-types Order-types Order-types"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Payment-Methods Order-types Order-types Order-types Order-types Order-types Order-types Order-types Order-types Order-types Order-types"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales"
+      "Recent-transactions Recent-transactions Recent-transactions Recent-transactions -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales -Weekly-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales Daily-sales";
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.grid div{
+    background: #101828;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.Day-profit { grid-area: Day-profit; }
+.Client-statistic { grid-area: Client-statistic; }
+.Recent-transactions { grid-area: Recent-transactions; }
+.Day-active { grid-area: Day-active; }
+.Payment-Methods { grid-area: Payment-Methods; }
+.-Weekly-sales { grid-area: -Weekly-sales; }
+.Period { grid-area: Period; }
+.Order-types { grid-area: Order-types; }
+.Daily-sales { grid-area: Daily-sales; }
+.Conversion { grid-area: Conversion; }
+.Current-statistics { grid-area: Current-statistics; }
+.Profit { grid-area: Profit; }
