@@ -1,7 +1,8 @@
 import React from 'react'
-import Input from './components/Input/Input'
+import Input from 'D:/Projects/cityfoodpc/src/components/Input/Input.js'
 import mascotPicture from './pictures/image_2022-10-13_15-34-44.png'
-import './registration.css'
+import './Registration.css'
+import { Link } from 'react-router-dom'
 
 function registration() {
   return (
@@ -30,7 +31,7 @@ function registration() {
             <label htmlFor="checkbox">Запомнить меня?</label>
           </div>
           <div className="ForgotPaswort">Забыли пароль?</div>
-          <div className="Enter">Войти</div>
+          <Link to={"/statistic"} className="Enter">Войти</Link>
           <div className="Demo">Демо версия</div>
           <div className="Strip"><hr></hr><div>или войти с</div></div>
           <div className="GoogleEnter"><div></div>Google</div>

@@ -1,0 +1,21 @@
+.Button {
+    display: flex;
+    font-family: "Century Gothic";
+    background: #53E88B;
+    height: 64%;
+    width: 100%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.4s;
+    color: #000000;
+    text-decoration: none;
+}
+  
+.Button:hover{
+    transition: 0.4s;
+    background: #00ff62;
+    cursor: pointer;
+}

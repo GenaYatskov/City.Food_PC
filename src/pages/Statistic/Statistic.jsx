@@ -1,11 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import welcomeIrinaPic from './pictures/b7a5e4e9-e03b-49c8-91c3-f8cfc991e252 1.png'
 import './Statistic.css'
 
 function Statistic() {
   return (
     <div className="container">
-      <div className="menu"></div>
+      <div className="menu">
+        <div className='welcomeIrina'>
+          <div className='content'>
+            <div className='welcomeUser'>Привет, Ирина</div>
+            <div className='todaysRevenueInscription'>Сегодняшняя выручка:</div>
+            <div className='todaysRevenueStatistic'></div>
+          </div>
+          <img src={welcomeIrinaPic} className='picture'></img>
+        </div>
+      </div>
       <div className="header">
         <div className='search'>
           <div className='searchIcon'></div>
