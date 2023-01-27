@@ -139,6 +139,7 @@
 
 .welcomeIrina{
   display: flex;
+  flex: 0;
   justify-content: space-between;
   width: 100%;
   height: 15%;
@@ -148,6 +149,8 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  background: none;
+  position: relative;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr; 
@@ -169,11 +172,20 @@
 }
 
 .picture {
+  width: 50%;
+  height: 100%;
+  position: relative;
   z-index: 0;
 }
 
 .todaysRevenueInscription { grid-area: todaysRevenueInscription; }
 .todaysRevenueStatistic { grid-area: todaysRevenueStatistic; }
+
+.infopanel{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
 
 .grid {
   grid-area: Grid;

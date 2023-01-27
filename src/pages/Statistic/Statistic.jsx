@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import welcomeIrinaPic from './pictures/b7a5e4e9-e03b-49c8-91c3-f8cfc991e252 1.png'
 import './Statistic.css'
+import ListComponent from '../../components/ListComponent/ListComponent'
 
 function Statistic() {
   return (
@@ -14,6 +15,14 @@ function Statistic() {
             <div className='todaysRevenueStatistic'></div>
           </div>
           <img src={welcomeIrinaPic} className='picture'></img>
+        </div>
+        <div className='infopanel'>
+          Инфопанель
+          <ListComponent>Калькулятор</ListComponent>
+          {/* listComponent */}
+        </div>
+        <div className='application'>
+          {/* listComponent */}
         </div>
       </div>
       <div className="header">
@@ -28,18 +37,18 @@ function Statistic() {
         <Link to={"/registration"} className='logout'></Link>
       </div>
       <div className="grid">
-        <div class="Day-profit"></div>
-        <div class="Client-statistic"></div>
-        <div class="Recent-transactions"></div>
-        <div class="Day-active"></div>
-        <div class="Payment-Methods"></div>
-        <div class="-Weekly-sales"></div>
-        <div class="Period"></div>
-        <div class="Order-types"></div>
-        <div class="Daily-sales"></div>
-        <div class="Conversion"></div>
-        <div class="Current-statistics"></div>
-        <div class="Profit"></div>
+        <div className="Day-profit"></div>
+        <div className="Client-statistic"></div>
+        <div className="Recent-transactions"></div>
+        <div className="Day-active"></div>
+        <div className="Payment-Methods"></div>
+        <div className="-Weekly-sales"></div>
+        <div className="Period"></div>
+        <div className="Order-types"></div>
+        <div className="Daily-sales"></div>
+        <div className="Conversion"></div>
+        <div className="Current-statistics"></div>
+        <div className="Profit"></div>
       </div>
     </div>
   )

@@ -1,0 +1,21 @@
+.listComponent{
+    display: flex;
+    background: none;
+    transition: 0.4s;
+    width: 100%;
+    height: auto;
+}
+
+.listComponent:hover{
+    background: #4343437e;
+    transition: 0.4s
+}
+
+.listComponent:active{
+    background: rgb(236, 236, 236);
+}
+
+.img{
+    color: rgb(255, 255, 255);
+    height: 2;
+}
