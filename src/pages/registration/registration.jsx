@@ -4,7 +4,7 @@ import mascotPicture from './pictures/image_2022-10-13_15-34-44.png'
 import './Registration.css'
 import { Link } from 'react-router-dom'
 
-function registration() {
+function Registration() {
   return (
     <div className="App">
       <img alt='' src={mascotPicture} className='mascotPicture'/>
@@ -43,4 +43,4 @@ function registration() {
   )
 }
 
-export default registration
+export default Registration
