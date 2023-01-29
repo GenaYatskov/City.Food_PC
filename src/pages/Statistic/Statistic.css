@@ -139,6 +139,7 @@
 
 .welcomeIrina{
   display: flex;
+  position: relative;
   flex: 0;
   justify-content: space-between;
   width: 100%;
@@ -146,25 +147,25 @@
 }
 
 .content {
+  z-index: 5;
+  margin: 7%;
   width: 100%;
   height: 100%;
-  z-index: 1;
   background: none;
-  position: relative;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "welcomeUser welcomeUser welcomeUser welcomeUser welcomeUser ."
-    "todaysRevenueInscription todaysRevenueInscription todaysRevenueInscription . . ."
+    "todaysRevenueInscription todaysRevenueInscription todaysRevenueInscription todaysRevenueInscription . ."
     "todaysRevenueStatistic todaysRevenueStatistic . . . ."
     "todaysRevenueStatistic todaysRevenueStatistic . . . ."; 
 }
 
 .welcomeUser {
   grid-area: welcomeUser;
-  font-family: 'SF Pro Display';
+  font-family: 'Century Gothic';
   font-style: normal;
   font-weight: 900;
   font-size: 24px; 
@@ -172,19 +173,40 @@
 }
 
 .picture {
-  width: 50%;
+  width: 40%;
   height: 100%;
-  position: relative;
   z-index: 0;
+  position: absolute;
+  right: 1%;
 }
 
-.todaysRevenueInscription { grid-area: todaysRevenueInscription; }
+.todaysRevenueInscription {
+  grid-area: todaysRevenueInscription;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(217, 220, 226, 0.4);
+  font-family: 'Century Gothic';
+}
+
 .todaysRevenueStatistic { grid-area: todaysRevenueStatistic; }
 
 .infopanel{
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column
+}
+
+.panelName{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(217, 220, 226, 0.4);
+  font-family: 'Century Gothic';
+  margin: 4%;
 }
 
 .grid {

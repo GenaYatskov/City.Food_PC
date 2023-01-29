@@ -17,8 +17,8 @@ function Statistic() {
           <img src={welcomeIrinaPic} className='picture'></img>
         </div>
         <div className='infopanel'>
-          Инфопанель
-          <ListComponent>Калькулятор</ListComponent>
+          <div className='panelName'>Инфопанели</div>
+          <ListComponent body={'Основная панель'}></ListComponent>
           {/* listComponent */}
         </div>
         <div className='application'>

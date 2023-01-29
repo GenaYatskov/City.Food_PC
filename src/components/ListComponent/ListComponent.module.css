@@ -4,6 +4,8 @@
     transition: 0.4s;
     width: 100%;
     height: auto;
+    color: aliceblue;
+    cursor: pointer;
 }
 
 .listComponent:hover{
