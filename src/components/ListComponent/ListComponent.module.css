@@ -1,8 +1,8 @@
 .listComponent{
     display: flex;
-    background: #ff00007e;
+    background: #D9DCE2;
     transition: 0.4s;
-    color: rgb(255, 255, 255);
+    color: #000000;
     cursor: pointer;
     border-radius: 6px;
     height: 100%;
@@ -20,8 +20,16 @@
     background: rgb(236, 236, 236);
 }
 
+.blockName{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    font-family: 'Century Gothic';
+}
+
 .img{
     background: none;
     display: block;
-    padding: 0 4% 0 0;
+    padding: 0 14% 0 0;
 }
