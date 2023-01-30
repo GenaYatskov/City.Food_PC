@@ -196,7 +196,8 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+
 }
 
 .panelName{
@@ -206,7 +207,7 @@
   line-height: 21px;
   color: rgba(217, 220, 226, 0.4);
   font-family: 'Century Gothic';
-  margin: 4%;
+  margin: 6%;
 }
 
 .grid {

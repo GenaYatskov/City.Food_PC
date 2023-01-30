@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import welcomeIrinaPic from './pictures/b7a5e4e9-e03b-49c8-91c3-f8cfc991e252 1.png'
+import mainPanel from './pictures/image_2023-01-30_02-26-12.png'
 import './Statistic.css'
 import ListComponent from '../../components/ListComponent/ListComponent'
 
@@ -18,8 +19,7 @@ function Statistic() {
         </div>
         <div className='infopanel'>
           <div className='panelName'>Инфопанели</div>
-          <ListComponent body={'Основная панель'}></ListComponent>
-          {/* listComponent */}
+          <ListComponent img={mainPanel} body={'Основная панель'}></ListComponent>
         </div>
         <div className='application'>
           {/* listComponent */}

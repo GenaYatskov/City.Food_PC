@@ -1,10 +1,10 @@
 import React from 'react'
 import style from './ListComponent.module.css'
 
-const ListComponent = ({body, ...props}) => {
+const ListComponent = ({body,img, ...props}) => {
   return <div className={style.listComponent} {...props}>
-    {body}
-    <div className={style.img}></div>
+    <img src={img} className={style.img}></img>
+    <div className={style.blockName}>{body}</div>
   </div>
 }
 export default ListComponent
